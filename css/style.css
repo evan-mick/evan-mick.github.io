@@ -13,9 +13,10 @@
     --fw-reg: 400;
     --fw-bold: 700;
     
-    --clr-light: #fff;
+    --clr-light: rgb(255, 255, 255);
+    --clr-background: rgb(1, 194, 211);
     --clr-dark: #303030;
-    --clr-accent: #f8333c;
+    --clr-accent: #ff7b00;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -61,7 +62,9 @@ img {
     max-width: 100%;
 }
 
-strong { font-weight: var(--fw-bold) }
+strong { 
+    font-weight: var(--fw-bold) 
+}
 
 :focus {
     outline: 3px solid var(--clr-accent);
@@ -112,6 +115,7 @@ h3 { font-size: var(--fs-h3) }
 
 .section__title--intro strong {
     display: block;
+
 }
 
 .section__subtitle {
@@ -399,10 +403,12 @@ header {
     overflow: hidden;
 }
 
+/*https://stackoverflow.com/questions/15167545/how-to-crop-a-rectangular-image-into-a-square-with-css*/
 .portfolio__img {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
+    
 }
 
 .portfolio__item:focus {
